@@ -1,5 +1,4 @@
 import React from 'react'
-import InstagramFeed from './InstagramFeed'
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa'
 import './Footer.css'
 
