@@ -1,5 +1,5 @@
 .Nav {
-  background: white;
+  background: var(--background-theme);
   position: sticky;
   top: 0;
   z-index: 2;
@@ -10,7 +10,7 @@
 .Nav--Container {
   display: flex;
   align-items: center;
-  height: 6rem;
+  height: 9rem;
 }
 
 .Nav--Links {

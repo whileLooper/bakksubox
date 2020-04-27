@@ -8,3 +8,18 @@
   color: black;
   text-decoration: none;
 }
+
+.footer .taCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  display: flex;
+  width: 30%;
+  height: 75px;
+  padding-top: 25px;
+  justify-content: space-evenly;
+  font-size: 18px;
+  align-items: center;
+}

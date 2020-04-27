@@ -5,9 +5,10 @@
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
-  --font-system: system-ui; /* postcssPresetEnv */
+  --font-primary: 'Raleway', sans-serif;
+  --font-system: 'Raleway', system-ui, sans-serif; /* postcssPresetEnv */
   --borderRadius: 3px;
+  --background-theme: #f2f2f2;
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +38,7 @@ body {
   font-family: var(--font-system);
   min-height: 100%;
   position: relative;
-  background: white;
+  background: var(--background-theme);
   color: var(--secondary);
   font-size: 1.6em;
   font-weight: 400;
