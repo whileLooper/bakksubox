@@ -67,7 +67,7 @@ export class Navigation extends Component {
                 }`}
                 onMouseEnter={() => this.toggleSubNav('posts')}
                 onMouseLeave={() => this.toggleSubNav('')}
-                // onClick={() => this.toggleSubNav('posts')}
+                onClick={() => this.toggleSubNav('posts')}
               >
                 PORTFOLIO
                 <div className="Nav--GroupLinks">
