@@ -1,15 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
+import MainFrame from '../components/MainFrame/MainFrame'
 import Layout from '../components/Layout'
 import './HomePage.css'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
-    <div className="content-frame">
+    <MainFrame>
       <div className="frame-title">
         <p>MINIMAL CREATIVE PORTFOLIO</p>
       </div>
@@ -20,13 +19,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
         </p>
       </div>
       <div className="frame-grid"></div>
-    </div>
-    {/* 
-    <section className="section">
-      <div className="container">
-        <Content source={body} />
-      </div>
-    </section> */}
+    </MainFrame>
   </main>
 )
 

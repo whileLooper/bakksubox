@@ -1,0 +1,39 @@
+.content-frame {
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: 0px;
+    background-color: #ffffff;
+    border-color: #000000;
+    z-index: 1;
+    background-image: none;
+}
+
+@media (min-width: 1171px), print {
+    .content-frame {
+        width: 1170px;
+        min-height: 2059px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1170px) {
+    .content-frame {
+        width: 960px;
+        min-height: 1779px;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 960px) {
+    .content-frame {
+        width: 570px;
+        min-height: 2883px;
+    }
+}
+
+@media (max-width: 570px) {
+    .content-frame {
+        width: 320px;
+        min-height: 2348px;
+    }
+}
+
