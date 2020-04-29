@@ -104,6 +104,38 @@
   width: 15rem;
 }
 
+@media (max-width: 1700px) {
+  
+  .Nav--Links {
+    margin-left: 40rem;
+  }
+  .Nav--Links > * + * {
+    margin-left: 2rem;
+  }
+  
+}
+
+@media (max-width: 1300px) {
+  .Nav--Links {
+    margin-left: 20rem;
+  }
+  .Nav--Links > * + * {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Nav--Links {
+    margin-left: 5rem;
+  }
+  .Nav--Links > * + * {
+    margin-left: 0.5rem;
+  }
+}
+
+
+
+
 @media (max-width: 600px) {
   .Nav--Container {
     display: flex;
@@ -130,6 +162,8 @@
     bottom: 0;
     background: white;
     animation: Nav--Links 0.2s ease;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   .Nav--Links > * + * {
@@ -139,6 +173,7 @@
   }
 
   .Nav-active .Nav--Links {
+    margin-top: -40rem;
     display: flex;
   }
 
