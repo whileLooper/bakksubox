@@ -36,6 +36,7 @@ export class Navigation extends Component {
             to === this.state.currentPath ? 'active' : ''
           } ${className}`}
           onClick={this.handleLinkClick}
+
           {...props}
         >
           {children}
@@ -49,8 +50,8 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/components/">Components</NavLink>
+            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/components/">SERVICES</NavLink>
             <div
               className={`Nav--Group ${
                 this.state.activeSubNav === 'posts' ? 'active' : ''
@@ -64,9 +65,11 @@ export class Navigation extends Component {
                     ? 'active'
                     : ''
                 }`}
-                onClick={() => this.toggleSubNav('posts')}
+                onMouseEnter={() => this.toggleSubNav('posts')}
+                onMouseLeave={() => this.toggleSubNav('')}
+                // onClick={() => this.toggleSubNav('posts')}
               >
-                Blog
+                PORTFOLIO
                 <div className="Nav--GroupLinks">
                   <NavLink to="/blog/" className="Nav--GroupLink">
                     All Posts
@@ -83,8 +86,8 @@ export class Navigation extends Component {
                 </div>
               </span>
             </div>
-            <NavLink to="/default/">Default</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
+            <NavLink to="/default/">ABOUT</NavLink>
+            <NavLink to="/contact/">CONTACT</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"
